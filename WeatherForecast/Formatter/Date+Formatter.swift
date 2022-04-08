@@ -15,7 +15,7 @@ fileprivate let dateFormatter: DateFormatter = {
 
 extension Date {
     var dateString: String {
-        dateFormatter.dateFormat = "M월 d일"
+        dateFormatter.dateFormat = "M월 d일 (E)"
         return dateFormatter.string(from: self)
     }
     
